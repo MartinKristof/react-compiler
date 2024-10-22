@@ -40,7 +40,7 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-compiler": "^19.0.0-beta-8a03594-20241020",
     "eslint-plugin-react-hooks": "^0.0.0-experimental-69d4b800-20241021",
-    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-react-refresh": "^0.4.13",
     "husky": "^9.0.6",
     "postcss": "^8.4.33",
     "prettier": "^3.2.4",
