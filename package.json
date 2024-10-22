@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "^7.17.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
-    "babel-plugin-react-compiler": "^0.0.0-experimental-fa06e2c-20241016",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-7449567-20240905",
     "eslint": "8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
