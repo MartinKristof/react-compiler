@@ -1,7 +1,7 @@
+/* eslint-disable lines-around-directive */
 import { memo, useMemo } from 'react';
 import { MemoizedProductList } from './MemoizedProductList';
 import { MemoizedHeading } from './MemoizedHeading';
-import { MemoizedFeaturedProducts } from './MemoizedFeaturedProducts';
 import { TProduct } from './types';
 import { MemoizedHeadingForm } from './MemoizedHeadingForm';
 
@@ -20,8 +20,8 @@ export const MemoizedProducts = memo<{
       Products - <span className="text-gray-400">rendered - {Date.now()}</span>
       <MemoizedHeading heading={heading} totalProducts={totalProducts} />
       <MemoizedHeadingForm setHeading={setHeading} heading={heading} />
-      <MemoizedProductList products={products} />
-      <MemoizedFeaturedProducts featuredProducts={featuredProducts} />
+      <MemoizedProductList title="Product List" products={products} />
+      <MemoizedProductList title="Featured List" products={featuredProducts} />
     </div>
   );
 });

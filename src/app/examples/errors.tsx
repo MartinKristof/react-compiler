@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -23,6 +24,8 @@ const MutationOfProps: FC<{ a: any; c: any }> = ({ a, c }) => {
 
 const ReassignConst: FC = () => {
   const [state1, setState1] = useState('test');
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   // eslint-disable-next-line no-const-assign
   state1 = 'John';
 
@@ -30,7 +33,7 @@ const ReassignConst: FC = () => {
 };
 
 let count = 0;
-const ReassignOutterVar: FC = () => {
+const ReassignOutsideVar: FC = () => {
   // eslint-disable-next-line lines-around-directive
   'use no memo'; // Could be removed and still works
   count += 1;
@@ -38,7 +41,8 @@ const ReassignOutterVar: FC = () => {
 };
 
 const UnusedNoMemo = () => {
-  'use no memo'; // Unused directive
+  // eslint-disable-next-line lines-around-directive
+  'use no memo';
 
   return <div>Hello world</div>;
 };

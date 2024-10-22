@@ -1,10 +1,10 @@
 import { useState, useMemo, FC } from 'react';
 
+// Cannot be compiled
 export const UseMemoIssue: FC<{ names: string[] }> = ({ names }) => {
   const [newNames, setNewNames] = useState<string[]>(names);
 
   useMemo(() => {
-    // Try to bypass the linter the rule -> the compiler will not applied
     setNewNames(names);
   }, [names]);
 

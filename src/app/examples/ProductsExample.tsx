@@ -24,7 +24,7 @@ const products: TProduct[] = [
     featured: true,
   },
 ];
-export const ProductExample = () => {
+export const ProductsExample = () => {
   const [heading, setHeading] = useState('The Mobile Products');
 
   return (

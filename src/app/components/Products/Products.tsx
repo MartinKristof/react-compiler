@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { ProductList } from './ProductList';
 import { Heading } from './Heading';
-import { FeaturedProducts } from './FeaturedProducts';
 import { TProduct } from './types';
 import { HeadingForm } from './HeadingForm';
 
@@ -18,8 +17,8 @@ export const Products: FC<{
       Products - <span className="text-gray-400">rendered - {Date.now()}</span>
       <Heading heading={heading} totalProducts={totalProducts} />
       <HeadingForm setHeading={setHeading} heading={heading} />
-      <ProductList products={products} />
-      <FeaturedProducts featuredProducts={featuredProducts} />
+      <ProductList title="Product List" products={products} />
+      <ProductList title="Featured List" products={featuredProducts} />
     </div>
   );
 };

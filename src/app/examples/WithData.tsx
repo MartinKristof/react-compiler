@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 export const WithData: FC = () => {
-  const name = 'Jack';
+  const name = 'John Doe';
 
   return (
     <div>

@@ -1,3 +1,4 @@
+/* eslint-disable lines-around-directive */
 import { memo } from 'react';
 
 // eslint-disable-next-line react/display-name

@@ -1,9 +1,9 @@
 import { useState, useEffect, FC } from 'react';
 
+// Cannot be compiled when bypassing the rule react-hooks/exhaustive-deps
 export const UseEffect: FC = () => {
   const [time, setTime] = useState(0);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const adjustTime = () => {
     setTime(currentTime => currentTime + 1);
   };

@@ -7,7 +7,9 @@ type TPost = {
   body: string;
 };
 
+// Try to add use no memo - you have to wrap getData with useCallback
 export const useApi = () => {
+  // 'use no memo';
   const [data, setData] = useState<TPost[]>([]);
   const [loading, setLoading] = useState(false);
 
