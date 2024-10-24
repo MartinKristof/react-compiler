@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+// Show compiled code
 export const SortedList: FC<{ names: string[] }> = ({ names }) => {
   const sortedNames = names.toSorted();
 

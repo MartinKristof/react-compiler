@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+// Show compiled code
 export const WithData: FC = () => {
   const name = 'John Doe';
 

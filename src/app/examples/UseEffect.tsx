@@ -1,9 +1,13 @@
 import { useState, useEffect, FC } from 'react';
 
-// Cannot be compiled when bypassing the rule react-hooks/exhaustive-deps
+// Show compiled code
+// Remove use no memo and add useCallback to adjustTime
+// Cannot be compiled when we bypass the rule react-hooks/exhaustive-deps or other rules of react!
 export const UseEffect: FC = () => {
+  // use no memo
   const [time, setTime] = useState(0);
 
+  // ESLint bug
   const adjustTime = () => {
     setTime(currentTime => currentTime + 1);
   };

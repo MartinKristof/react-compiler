@@ -1,4 +1,6 @@
-import { useState } from 'react';
+/* eslint-disable lines-around-directive */
+/* eslint-disable react-compiler/react-compiler */
+import { FC, useState } from 'react';
 import { TProduct } from '../components/Products/types';
 import { MemoizedProducts } from '../components/MemoizedProducts/MemoizedProducts';
 
@@ -24,7 +26,8 @@ const products: TProduct[] = [
     featured: true,
   },
 ];
-export const MemoizedProductsExample = () => {
+// Show unused no memo
+export const MemoizedProductsExample: FC = () => {
   'use no memo';
   const [heading, setHeading] = useState('The Mobile Products');
 

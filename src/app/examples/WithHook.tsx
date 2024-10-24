@@ -1,9 +1,9 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useApi } from '../hooks/useApi';
 
-// Try to add use no memo
+// Add use no memo
 export const WithHook = () => {
-  // 'use no memo';
+  // use no memo
   const [searchParam, setSearchParam] = useState('');
   const { data, loading, getData, setData } = useApi();
 

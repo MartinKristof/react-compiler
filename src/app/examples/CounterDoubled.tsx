@@ -1,5 +1,6 @@
 import { useState, useMemo, FC } from 'react';
 
+// Show compiled code
 export const CounterDoubled: FC = () => {
   const [count, setCount] = useState(0);
 

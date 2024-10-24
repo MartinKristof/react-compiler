@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { Products } from '../components/Products/Products';
 import { TProduct } from '../components/Products/types';
 
@@ -24,7 +24,9 @@ const products: TProduct[] = [
     featured: true,
   },
 ];
-export const ProductsExample = () => {
+
+// Show compiled code for Heading component
+export const ProductsExample: FC = () => {
   const [heading, setHeading] = useState('The Mobile Products');
 
   return (

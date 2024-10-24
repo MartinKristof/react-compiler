@@ -1,7 +1,5 @@
 import { FC } from 'react';
-import { Simple } from './Simple';
 import { WithData } from './WithData';
-import { Counter } from './Counter';
 import { CounterDoubled } from './CounterDoubled';
 import { SortedListMemoized } from './SortedListMemoized';
 import { SortedList } from './SortedList';
@@ -14,9 +12,7 @@ import { WithHook } from './WithHook';
 
 export const Examples: FC = () => (
   <>
-    <Simple />
-    {/* <WithData /> */}
-    {/* <Counter /> */}
+    <WithData />
     {/* <CounterDoubled /> */}
     {/* <SortedListMemoized names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
     {/* <SortedList names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
@@ -24,8 +20,8 @@ export const Examples: FC = () => (
     {/* <UseEffect /> */}
     {/* Show Errors component */}
     {/* <ChildRerendering /> */}
-    {/* <ProductsExample /> */}
-    {/* <MemoizedProductsExample /> */}
+    {/* <ProductsExample />
+    <MemoizedProductsExample /> */}
     {/* <WithHook /> */}
   </>
 );
