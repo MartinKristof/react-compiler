@@ -1,9 +1,9 @@
-/* eslint-disable lines-around-directive */
 import { memo } from 'react';
 
 // eslint-disable-next-line react/display-name
 export const MemoizedHeading = memo<{ heading: string; totalProducts: number }>(({ heading, totalProducts }) => {
   'use no memo';
+
   return (
     <nav>
       <h1 className="text-2xl">

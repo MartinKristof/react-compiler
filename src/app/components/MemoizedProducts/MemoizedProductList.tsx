@@ -1,10 +1,10 @@
-/* eslint-disable lines-around-directive */
 import { memo } from 'react';
 import { TProduct } from './types';
 
 // eslint-disable-next-line react/display-name
 export const MemoizedProductList = memo<{ title: string; products: TProduct[] }>(({ title, products }) => {
   'use no memo';
+
   return (
     <div className="m-4">
       <h2 className="text-xl">

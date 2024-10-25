@@ -1,4 +1,3 @@
-/* eslint-disable lines-around-directive */
 import { memo, useMemo } from 'react';
 import { MemoizedProductList } from './MemoizedProductList';
 import { MemoizedHeading } from './MemoizedHeading';
@@ -12,6 +11,7 @@ export const MemoizedProducts = memo<{
   setHeading: (heading: string) => void;
 }>(({ products, heading, setHeading }) => {
   'use no memo';
+
   const featuredProducts = useMemo(() => products.filter(product => product.featured), [products]);
   const totalProducts = products.length;
 

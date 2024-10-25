@@ -1,6 +1,5 @@
-/* eslint-disable lines-around-directive */
 /* eslint-disable react-compiler/react-compiler */
-import { FC, useState } from 'react';
+import { FC, memo, useState } from 'react';
 import { TProduct } from '../components/Products/types';
 import { MemoizedProducts } from '../components/MemoizedProducts/MemoizedProducts';
 
@@ -27,8 +26,10 @@ const products: TProduct[] = [
   },
 ];
 // Show unused no memo
-export const MemoizedProductsExample: FC = () => {
+// eslint-disable-next-line react/display-name
+export const MemoizedProductsExample: FC = memo(() => {
   'use no memo';
+
   const [heading, setHeading] = useState('The Mobile Products');
 
   return (
@@ -37,4 +38,4 @@ export const MemoizedProductsExample: FC = () => {
       <MemoizedProducts products={products} heading={heading} setHeading={setHeading} />
     </div>
   );
-};
+});

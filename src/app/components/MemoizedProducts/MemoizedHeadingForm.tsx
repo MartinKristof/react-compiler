@@ -1,10 +1,10 @@
-/* eslint-disable lines-around-directive */
 import { ChangeEvent, memo } from 'react';
 
 // eslint-disable-next-line react/display-name
 export const MemoizedHeadingForm = memo<{ heading: string; setHeading: (heading: string) => void }>(
   ({ heading, setHeading }) => {
     'use no memo';
+
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
       setHeading(event.target.value);
     };
