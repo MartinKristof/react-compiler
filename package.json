@@ -15,8 +15,8 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "react": "^19.0.0-rc-69d4b800-20241021",
-    "react-dom": "^19.0.0-rc-69d4b800-20241021",
+    "react": "^19.0.0-rc.0",
+    "react-dom": "^19.0.0-rc.0",
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.26.2"
   },
