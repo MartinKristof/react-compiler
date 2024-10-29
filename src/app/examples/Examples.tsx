@@ -3,7 +3,6 @@ import { WithData } from './WithData';
 import { CounterDoubled } from './CounterDoubled';
 import { SortedListMemoized } from './SortedListMemoized';
 import { SortedList } from './SortedList';
-import { UseMemoIssue } from './UseMemoIssue';
 import { UseEffect } from './UseEffect';
 import { ChildRerendering } from './ChildRerendering';
 import { ProductsExample } from './ProductsExample';
@@ -16,7 +15,6 @@ export const Examples: FC = () => (
     {/* <CounterDoubled /> */}
     {/* <SortedListMemoized names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
     {/* <SortedList names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
-    {/* <UseMemoIssue names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
     {/* <UseEffect /> */}
     {/* Show Errors component */}
     {/* <ChildRerendering /> */}
