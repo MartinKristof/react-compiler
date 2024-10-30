@@ -1,3 +1,5 @@
+'use no memo';
+
 import { memo, useMemo } from 'react';
 import { MemoizedProductList } from './MemoizedProductList';
 import { MemoizedHeading } from './MemoizedHeading';
@@ -10,8 +12,6 @@ export const MemoizedProducts = memo<{
   heading: string;
   setHeading: (heading: string) => void;
 }>(({ products, heading, setHeading }) => {
-  'use no memo';
-
   const featuredProducts = useMemo(() => products.filter(product => product.featured), [products]);
   const totalProducts = products.length;
 

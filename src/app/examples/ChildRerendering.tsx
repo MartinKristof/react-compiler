@@ -1,4 +1,3 @@
-/* eslint-disable lines-around-directive */
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { FC, memo, useCallback, useState } from 'react';

@@ -16,7 +16,7 @@ export const Examples: FC = () => (
     {/* <SortedListMemoized names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
     {/* <SortedList names={['Xor', 'Bar', 'Foo', 'Baz']} /> */}
     {/* <UseEffect /> */}
-    {/* Show Errors component */}
+    {/* Show Errors and UseMemoIssue components */}
     {/* <ChildRerendering /> */}
     {/* <ProductsExample />
     <MemoizedProductsExample /> */}

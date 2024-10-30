@@ -1,4 +1,5 @@
-/* eslint-disable react-compiler/react-compiler */
+'use no memo';
+
 import { FC, memo, useState } from 'react';
 import { TProduct } from '../components/Products/types';
 import { MemoizedProducts } from '../components/MemoizedProducts/MemoizedProducts';
@@ -25,11 +26,9 @@ const products: TProduct[] = [
     featured: true,
   },
 ];
-// Show unused no memo
+
 // eslint-disable-next-line react/display-name
 export const MemoizedProductsExample: FC = memo(() => {
-  'use no memo';
-
   const [heading, setHeading] = useState('The Mobile Products');
 
   return (
