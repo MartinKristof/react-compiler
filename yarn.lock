@@ -1661,10 +1661,10 @@ eslint-plugin-react-compiler@^19.0.0-beta-6fc168f-20241025:
     zod "^3.22.4"
     zod-validation-error "^3.0.3"
 
-eslint-plugin-react-hooks@^0.0.0-experimental-02c0e824-20241028:
-  version "0.0.0-experimental-02c0e824-20241028"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-0.0.0-experimental-02c0e824-20241028.tgz#0cdce286d7bb59d98bdec5463cab6dfa4d822f69"
-  integrity sha512-qIR/YcDeAG2V3FL7EWgL0hR32wEw64eOEUQdGZKru4RbDXOvSNaVDn4AOxsdTKol5bjjpHv41tK5hwuPHCvMoQ==
+eslint-plugin-react-hooks@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0.tgz#72e2eefbac4b694f5324154619fee44f5f60f101"
+  integrity sha512-hIOwI+5hYGpJEc4uPRmz2ulCjAGD/N13Lukkh8cLV0i2IRk/bdZDYjgLVHj+U9Z704kLIdIO6iueGvxNur0sgw==
 
 eslint-plugin-react-refresh@^0.4.5:
   version "0.4.14"
