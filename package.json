@@ -15,14 +15,14 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "react": "^19.0.0-rc-69d4b800-20241021",
-    "react-dom": "^19.0.0-rc-69d4b800-20241021",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
     "@typescript-eslint/eslint-plugin": "^7.17.0",
     "@typescript-eslint/parser": "^7.17.0",
     "@vitejs/plugin-react": "^4.2.1",
@@ -47,10 +47,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
     "vite-plugin-checker": "^0.7.2"
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
