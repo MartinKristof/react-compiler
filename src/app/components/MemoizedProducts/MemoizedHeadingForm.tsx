@@ -1,10 +1,12 @@
 'use no memo';
 
-import { ChangeEvent, memo } from 'react';
+import { ChangeEvent, memo, useMemo } from 'react';
 
 // eslint-disable-next-line react/display-name
 export const MemoizedHeadingForm = memo<{ heading: string; setHeading: (heading: string) => void }>(
   ({ heading, setHeading }) => {
+    const now = useMemo(() => Date.now(), []);
+
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
       setHeading(event.target.value);
     };
@@ -12,7 +14,7 @@ export const MemoizedHeadingForm = memo<{ heading: string; setHeading: (heading:
     return (
       <div className="m-2">
         <p>
-          HeadingForm - <span className="text-gray-400">rendered - {Date.now()}</span>
+          HeadingForm - <span className="text-gray-400">rendered - {now}</span>
         </p>
         <label htmlFor="heading">
           Heading:

@@ -14,10 +14,11 @@ export const MemoizedProducts = memo<{
 }>(({ products, heading, setHeading }) => {
   const featuredProducts = useMemo(() => products.filter(product => product.featured), [products]);
   const totalProducts = products.length;
+  const now = useMemo(() => Date.now(), []);
 
   return (
     <div className="m-2">
-      Products - <span className="text-gray-400">rendered - {Date.now()}</span>
+      Products - <span className="text-gray-400">rendered - {now}</span>
       <MemoizedHeading heading={heading} totalProducts={totalProducts} />
       <MemoizedHeadingForm setHeading={setHeading} heading={heading} />
       <MemoizedProductList title="Product List" products={products} />
